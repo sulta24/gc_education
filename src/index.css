@@ -172,6 +172,18 @@ header {
   z-index: 70 !important;
 }
 
+/* Mentors Content */
+.mentors-content {
+  position: relative !important;
+  width: 100% !important;
+  height: 100% !important;
+  min-height: calc(100vh - 100px) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  z-index: 5 !important;
+}
+
 /* FAQ Container */
 .faq-container {
   position: absolute !important;

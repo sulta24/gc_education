@@ -1,6 +1,11 @@
 import * as React from 'react';
 
-const SearchBar: React.FC = () => {
+interface SearchBarProps {
+  value?: string;
+  onChange?: (value: string) => void;
+}
+
+const SearchBar: React.FC<SearchBarProps> = ({ value = '', onChange }) => {
   return (
     <div className="search-container">
       <div className="search-bar">
@@ -18,6 +23,8 @@ const SearchBar: React.FC = () => {
         <input
           type="text"
           placeholder="Поиск"
+          value={value}
+          onChange={(e) => onChange?.(e.target.value)}
         />
       </div>
       <button className="search-button">
@@ -27,4 +34,4 @@ const SearchBar: React.FC = () => {
   );
 };
 
-export default SearchBar; 
+export default SearchBar;

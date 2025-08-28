@@ -7,6 +7,7 @@ import MentorHexCard from '../components/MentorHexCard';
 
 const Home: React.FC = () => {
   const [activeFAQ, setActiveFAQ] = useState<number[]>([]);
+  const [searchValue, setSearchValue] = useState<string>('');
 
   const toggleFAQ = (index: number) => {
     setActiveFAQ(prev => {
@@ -57,15 +58,15 @@ const Home: React.FC = () => {
 
         {/* Поисковая строка */}
         <div className="hero-overlay">
-          <SearchBar />
-          <NavigationMenu />
+          <SearchBar value={searchValue} onChange={setSearchValue} />
+          <NavigationMenu onItemClick={setSearchValue} />
         </div>
       </section>
 
       {/* Вторая секция: продолжение фона вниз (landing2.png) */}
       <section className="hero-section hero-section--second">
         {/* Надпись "О платформе" на втором фото */}
-        <div className="platform-info-container">
+        <div className="platform-info-container" id="about-platform">
           <span className="platform-info-text">О платформе</span>
           <p className="platform-description">
             Выбирайте профессию и получайте персональные советы от менторов по
