@@ -43,7 +43,7 @@ export default function HowItWorksPage() {
                       <span className="font-semibold text-foreground">Более 50+ экспертных менторов</span>
                     </div>
                     <p className="text-muted-foreground text-sm">
-                      Выпускники топовых университетов мира с реальным опытом в различных сферах
+                      Эксперты из топовых компаний мира с реальным опытом в различных сферах
                     </p>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function HowItWorksPage() {
                   </div>
                   <h3 className="text-xl font-semibold text-foreground mb-2">Достижение результатов</h3>
                   <p className="text-muted-foreground">
-                    Поступление в топовые вузы и успешная карьера
+                    Достижение карьерных целей и профессиональный рост
                   </p>
                 </div>
               </div>

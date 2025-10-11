@@ -12,9 +12,9 @@ export function HallOfFame() {
         <div className="flex flex-col gap-10 md:gap-12">
           <div className="section-title-gap-lg mx-auto flex max-w-2xl flex-col items-center text-center">
             <Tagline>Зал славы</Tagline>
-            <h2 className="heading-lg text-foreground">Истории успеха наших студентов</h2>
+            <h2 className="heading-lg text-foreground">Истории успеха наших клиентов</h2>
             <p className="text-muted-foreground">
-              Реальные результаты студентов, которые достигли своих целей с помощью GC Education
+              Реальные результаты людей, которые достигли своих карьерных целей с помощью GC Education
             </p>
           </div>
 
@@ -36,15 +36,17 @@ export function HallOfFame() {
 
                 <div className="bg-primary/5 rounded-lg p-4">
                   <div className="text-center">
-                    <div className="text-primary font-bold text-3xl">$550,000</div>
+                    <div className="text-primary font-bold text-3xl">500%</div>
+                    <div className="text-muted-foreground text-sm">рост зарплаты</div>
+                    <div className="text-foreground font-semibold mt-1">Увеличение дохода</div>
                     <div className="text-muted-foreground text-sm">или 245 млн ₸</div>
                     <div className="text-foreground font-semibold mt-1">Общая сумма стипендий</div>
                   </div>
                 </div>
 
                 <p className="text-muted-foreground leading-relaxed">
-                  Камила получила 6 офферов от университетов своей мечты, при этом получив от всех стипендии. 
-                  Каждый из вузов предложил ей финансовую поддержку именно в том размере, который ей был необходим для своего обучения!
+                  Камила успешно перешла в IT-сферу с нуля, получив оффер в международной компании. 
+                  За 8 месяцев работы с ментором она освоила программирование и увеличила свой доход в 5 раз!
                 </p>
               </CardContent>
             </Card>
@@ -59,7 +61,7 @@ export function HallOfFame() {
                   <div>
                     <h3 className="text-foreground font-bold text-2xl">Улан</h3>
                     <Badge variant="secondary" className="mt-1">
-                      От спорта к проектному менеджменту
+                      Карьерный рост в IT
                     </Badge>
                   </div>
                 </div>

@@ -28,9 +28,9 @@ export default function Page() {
       <FeatureSection9 />
       <HallOfFame />
       <TestimonialsSection1
-        quote="GC Education изменили мою жизнь. Я поступил в KAIST и получил стипендию на $200,000. Без их поддержки это было бы невозможно!"
+        quote="GC Education изменили мою карьеру. Я перешел в IT и увеличил зарплату в 5 раз. Без поддержки ментора это было бы невозможно!"
         authorName="Адильжан Нурланов"
-        authorRole="Студент KAIST"
+        authorRole="Senior Developer в Kaspi"
         avatarSrc="/MonicaKurt.png"
       />
       <FaqSection2 />

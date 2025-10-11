@@ -81,7 +81,7 @@ export default function MentorsPage() {
           <div className="flex flex-col md:flex-row items-start gap-6">
             <div className="flex-1">
               <h1 className="text-xl sm:text-2xl lg:text-3xl font-bold mb-4 text-left">
-                Работа с нашими менторами даст вам большое преимущество в поступлении в ТОПовые вузы по всему миру
+                Работа с нашими менторами даст вам большое преимущество в достижении карьерных целей
               </h1>
             </div>
             
@@ -180,7 +180,7 @@ export default function MentorsPage() {
                 <p className="text-gray-600">
                   {searchQuery.trim() 
                     ? `Найдено ${displayedMentors.length} ${displayedMentors.length === 1 ? 'ментор' : displayedMentors.length < 5 ? 'ментора' : 'менторов'}`
-                    : `${total} ${total === 1 ? 'ментор' : total < 5 ? 'ментора' : 'менторов'} готовы помочь вам поступить в ТОПовые вузы`
+                    : `${total} ${total === 1 ? 'ментор' : total < 5 ? 'ментора' : 'менторов'} готовы помочь вам достичь карьерных целей`
                   }
                 </p>
               </div>

@@ -9,10 +9,10 @@ export function StatsSection4() {
       <div className="container-padding-x container mx-auto">
         <div className="flex flex-col gap-10 md:gap-12">
           <div className="section-title-gap-lg mx-auto flex max-w-xl flex-col items-center text-center">
-            <Tagline>Результаты наших студентов</Tagline>
+            <Tagline>Наша платформа</Tagline>
             <h2 className="heading-lg text-foreground">Цифры говорят сами за себя</h2>
             <p className="text-muted-foreground">
-              8 лет опыта в сфере образования и тысячи успешных поступлений в лучшие университеты мира
+              Платформа объединяет людей, которые хотят развиваться, делиться опытом и помогать другим расти профессионально
             </p>
           </div>
 
@@ -20,49 +20,49 @@ export function StatsSection4() {
             <Card className="bg-secondary rounded-xl border-none p-6 shadow-none">
               <CardContent className="flex flex-col gap-2 p-0 md:gap-3">
                 <h3 className="text-primary font-semibold">
-                  Студентов по всему миру
+                  Активных менторов
                 </h3>
                 <span className="text-foreground text-3xl font-semibold md:text-4xl">
-                  500+
+                  900+
                 </span>
                 <p className="text-muted-foreground text-base">
-                  Студенты, которые поступили в университеты мечты с нашей помощью
+                  Экспертов из ведущих tech и creative компаний готовы помочь
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary rounded-xl border-none p-6 shadow-none">
               <CardContent className="flex flex-col gap-2 p-0 md:gap-3">
-                <h3 className="text-primary font-semibold">Приглашений от университетов</h3>
+                <h3 className="text-primary font-semibold">Средняя оценка</h3>
                 <span className="text-foreground text-3xl font-semibold md:text-4xl">
-                  1000+
+                  9.7/10
                 </span>
                 <p className="text-muted-foreground text-base">
-                  Офферов получили наши студенты от лучших университетов мира
+                  Рейтинг менторов после проведенных сессий
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary rounded-xl border-none p-6 shadow-none">
               <CardContent className="flex flex-col gap-2 p-0 md:gap-3">
-                <h3 className="text-primary font-semibold">Поступили с первого раза</h3>
+                <h3 className="text-primary font-semibold">Минимальный опыт</h3>
                 <span className="text-foreground text-3xl font-semibold md:text-4xl">
-                  100%
+                  5+ лет
                 </span>
                 <p className="text-muted-foreground text-base">
-                  Студентов поступили в выбранные университеты с первой попытки
+                  Практического опыта у каждого ментора в топовых компаниях
                 </p>
               </CardContent>
             </Card>
 
             <Card className="bg-secondary rounded-xl border-none p-6 shadow-none">
               <CardContent className="flex flex-col gap-2 p-0 md:gap-3">
-                <h3 className="text-primary font-semibold">Суммарно получено стипендий</h3>
+                <h3 className="text-primary font-semibold">Успешных сессий</h3>
                 <span className="text-foreground text-3xl font-semibold md:text-4xl">
-                  $10M
+                  10,000+
                 </span>
                 <p className="text-muted-foreground text-base">
-                  Общая сумма стипендий и грантов, полученных нашими студентами
+                  Консультаций проведено для карьерного роста и развития
                 </p>
               </CardContent>
             </Card>

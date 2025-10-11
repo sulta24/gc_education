@@ -5,6 +5,7 @@ import { Check, ArrowRight } from "lucide-react";
 import { AspectRatio } from "@/components/ui/aspect-ratio";
 import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
 import Image from "next/image";
+import Link from "next/link";
 
 export function HeroSection2() {
   return (
@@ -18,14 +19,14 @@ export function HeroSection2() {
           {/* Section Title */}
           <div className="section-title-gap-xl flex flex-col">
             {/* Tagline */}
-            <Tagline>GC education</Tagline>
+            <Tagline>Платформа менторства</Tagline>
             {/* Main Heading */}
             <h1 id="hero-heading" className="heading-xl">
-              Поможем тебе поступить в университет мечты на грант
+              Найди своего ментора на платформе, где опыт и поддержка встречаются с твоими целями
             </h1>
             {/* Description */}
             <p className="text-muted-foreground text-base lg:text-lg">
-              Комплексное индивидуальное сопровождение в лучшие университеты мира. Наши студенты уже учатся в: Stanford, KAIST, NYUAD, UofT, PolyU, University of British Columbia, CITY U, HKUST и многие другие!
+              Здесь ты можешь выбрать эксперта из ведущих creative и tech компаний, чтобы получить персональные советы по карьере, развитию навыков, переходу в новую профессию или запуску проекта.
             </p>
           </div>
 
@@ -36,7 +37,7 @@ export function HeroSection2() {
                 <Check className="text-primary h-5 w-5" />
               </div>
               <span className="text-card-foreground text-base leading-6 font-medium">
-                8 лет опыта в сфере образования
+                Более 900 менторов готовы поделиться опытом
               </span>
             </div>
 
@@ -45,7 +46,7 @@ export function HeroSection2() {
                 <Check className="text-primary h-5 w-5" />
               </div>
               <span className="text-card-foreground text-base leading-6 font-medium">
-                100% студентов поступили с первого раза
+                Средняя оценка менторов — 9,7 из 10
               </span>
             </div>
 
@@ -54,18 +55,22 @@ export function HeroSection2() {
                 <Check className="text-primary h-5 w-5" />
               </div>
               <span className="text-card-foreground text-base leading-6 font-medium">
-                $10,000,000 суммарно получено стипендий
+                Минимум 5 лет практического опыта у каждого ментора
               </span>
             </div>
           </div>
 
           {/* CTA Buttons */}
           <div className="flex flex-col gap-3 sm:flex-row">
-            <Button>Собеседование с экспертом</Button>
-            <Button variant="ghost">
-              Как это работает
-              <ArrowRight />
-            </Button>
+            <Link href="/mentors">
+              <Button>Найти ментора</Button>
+            </Link>
+            <Link href="/how-it-works">
+              <Button variant="ghost">
+                Как это работает
+                <ArrowRight />
+              </Button>
+            </Link>
           </div>
         </div>
 

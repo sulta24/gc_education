@@ -2,39 +2,39 @@
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
-import { CheckCircle, Calendar, Target, User, DollarSign, GraduationCap } from "lucide-react";
+import { CheckCircle, Calendar, Target, User, DollarSign, Briefcase } from "lucide-react";
 
 export function ConsultationBenefits() {
   const benefits = [
     {
       icon: CheckCircle,
-      title: "Создадим конкурентное портфолио",
-      description: "Эксперт даст готовые решения по усилению вашей заявки. Это поможет выделиться для приемной комиссии"
+      title: "Создадим план карьерного развития",
+      description: "Ментор поможет определить ваши сильные стороны и составит персональный план развития в выбранной сфере"
     },
     {
       icon: Calendar,
-      title: "Дадим календарь подготовки",
-      description: "Составим личный календарь подготовки к международным экзаменам с дедлайнами и датами"
+      title: "Дадим календарь достижения целей",
+      description: "Составим реалистичный план с конкретными шагами и дедлайнами для достижения ваших карьерных целей"
     },
     {
       icon: Target,
-      title: "Пошаговая инструкция для поступления в ТОП ВУЗ",
-      description: "Получите подробный пошаговый план подготовки в ТОП ВУЗ мечты с получением стипендий и грантов"
+      title: "Пошаговая стратегия роста",
+      description: "Получите детальный план развития навыков, смены профессии или запуска проекта от практикующего эксперта"
     },
     {
       icon: User,
-      title: "Разбор профиля от эксперта",
-      description: "Дадим список конкурсов и расскажем как создать проект, который поможет 100% поступить в желаемый ВУЗ"
+      title: "Разбор профиля и резюме",
+      description: "Проанализируем ваш опыт, навыки и поможем презентовать себя максимально выгодно для работодателей"
     },
     {
       icon: DollarSign,
-      title: "Запланируете свои финансы для поступления и жизни зарубежом",
-      description: "Посчитаете бюджет ребенка и запланируете все расходы связанные с обучением заграницей"
+      title: "Стратегия увеличения дохода",
+      description: "Обсудим способы повышения зарплаты, монетизации навыков и построения финансово успешной карьеры"
     },
     {
-      icon: GraduationCap,
-      title: "Выберите 3 ВУЗа куда подаваться",
-      description: "Исходя из ваших сильных и слабых сторон выберите ВУЗы вместе с экспертом по поступлению"
+      icon: Briefcase,
+      title: "Подготовка к собеседованиям",
+      description: "Отработаем типичные вопросы, поможем подготовить кейсы и повысим уверенность перед интервью"
     }
   ];
 
@@ -43,10 +43,10 @@ export function ConsultationBenefits() {
       <div className="container-padding-x container mx-auto">
         <div className="flex flex-col gap-10 md:gap-12">
           <div className="section-title-gap-lg mx-auto flex max-w-2xl flex-col items-center text-center">
-            <Tagline>Собеседование с экспертом</Tagline>
-            <h2 className="heading-lg text-foreground">Что получите на собеседовании?</h2>
+            <Tagline>Консультация с ментором</Tagline>
+            <h2 className="heading-lg text-foreground">Что получите на консультации?</h2>
             <p className="text-muted-foreground">
-              Персональная консультация с экспертом по поступлению, которая даст вам четкий план действий
+              Персональная сессия с экспертом из топовых компаний, которая даст вам четкий план действий для карьерного роста
             </p>
           </div>
 
