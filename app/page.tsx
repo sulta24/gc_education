@@ -1,13 +1,14 @@
 import { LpNavbar1 } from "@/components/pro-blocks/landing-page/lp-navbars/lp-navbar-1";
 import { HeroSection2 } from "@/components/pro-blocks/landing-page/hero-sections/hero-section-2";
-import { LogoSection10 } from "@/components/pro-blocks/landing-page/logo-sections/logo-section-7";
-import TestimonialsSection1 from "@/components/pro-blocks/landing-page/testimonials-sections/testimonials-section-1";
-import { BentoGrid6 } from "@/components/pro-blocks/landing-page/bento-grids/bento-grid-6";
-import { FeatureSection9 } from "@/components/pro-blocks/landing-page/feature-sections/feature-section-9";
-import { StatsSection4 } from "@/components/pro-blocks/landing-page/stats-sections/stats-section-4";
-import { ConsultationBenefits } from "@/components/pro-blocks/landing-page/consultation-benefits/consultation-benefits";
-import { HallOfFame } from "@/components/pro-blocks/landing-page/hall-of-fame/hall-of-fame";
-import { FaqSection2 } from "@/components/pro-blocks/landing-page/faq-sections/faq-section-2";
+import { PlatformDescription } from "@/components/pro-blocks/landing-page/platform-description/platform-description";
+import { HowItWorks } from "@/components/pro-blocks/landing-page/how-it-works/how-it-works";
+import { AiMentor } from "@/components/pro-blocks/landing-page/ai-mentor/ai-mentor";
+import { MentorTypes } from "@/components/pro-blocks/landing-page/mentor-types/mentor-types";
+import { CoursesSection } from "@/components/pro-blocks/landing-page/courses-section/courses-section";
+import { StudentStories } from "@/components/pro-blocks/landing-page/student-stories/student-stories";
+import { StudentJourney } from "@/components/pro-blocks/landing-page/student-journey/student-journey";
+import { TrustSection } from "@/components/pro-blocks/landing-page/trust-section/trust-section";
+import { FinalCta } from "@/components/pro-blocks/landing-page/final-cta/final-cta";
 import { Footer1 } from "@/components/pro-blocks/landing-page/footers/footer-1";
 
 export default function Page() {
@@ -15,25 +16,15 @@ export default function Page() {
     <main>
       <LpNavbar1 />
       <HeroSection2 />
-      <LogoSection10 />
-      <StatsSection4 />
-      <ConsultationBenefits />
-      <TestimonialsSection1
-        quote="Благодаря GC Education я смог поступить в Stanford с полной стипендией. Эксперты помогли мне создать сильное портфолио и подготовиться к экзаменам."
-        authorName="Айжан Касымова"
-        authorRole="Студентка Stanford University"
-        avatarSrc="/DavidPark.png"
-      />
-      <BentoGrid6 />
-      <FeatureSection9 />
-      <HallOfFame />
-      <TestimonialsSection1
-        quote="GC Education изменили мою карьеру. Я перешел в IT и увеличил зарплату в 5 раз. Без поддержки ментора это было бы невозможно!"
-        authorName="Адильжан Нурланов"
-        authorRole="Senior Developer в Kaspi"
-        avatarSrc="/MonicaKurt.png"
-      />
-      <FaqSection2 />
+      <PlatformDescription />
+      <HowItWorks />
+      <AiMentor />
+      <MentorTypes />
+      <CoursesSection />
+      <StudentStories />
+      <StudentJourney />
+      <TrustSection />
+      <FinalCta />
       <Footer1 />
     </main>
   );

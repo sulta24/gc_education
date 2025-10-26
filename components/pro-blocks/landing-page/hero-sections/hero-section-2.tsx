@@ -1,90 +1,76 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { Check, ArrowRight } from "lucide-react";
-import { AspectRatio } from "@/components/ui/aspect-ratio";
-import { Tagline } from "@/components/pro-blocks/landing-page/tagline";
-import Image from "next/image";
+import { ArrowRight, Brain, Check, Target, Users } from "lucide-react";
 import Link from "next/link";
 
 export function HeroSection2() {
   return (
-    <section
-      className="bg-secondary section-padding-y"
-      aria-labelledby="hero-heading"
-    >
-      <div className="container-padding-x container mx-auto flex flex-col items-center gap-12 lg:flex-row lg:gap-16">
-        {/* Left Column */}
-        <div className="flex flex-1 flex-col gap-6 lg:gap-8">
-          {/* Section Title */}
-          <div className="section-title-gap-xl flex flex-col">
-            {/* Tagline */}
-            <Tagline>Платформа менторства</Tagline>
-            {/* Main Heading */}
-            <h1 id="hero-heading" className="heading-xl">
-              Найди своего ментора на платформе, где опыт и поддержка встречаются с твоими целями
-            </h1>
-            {/* Description */}
-            <p className="text-muted-foreground text-base lg:text-lg">
-              Здесь ты можешь выбрать эксперта из ведущих creative и tech компаний, чтобы получить персональные советы по карьере, развитию навыков, переходу в новую профессию или запуску проекта.
-            </p>
-          </div>
-
-          {/* Feature List */}
-          <div className="flex flex-col gap-2 md:gap-3">
-            <div className="flex items-start gap-3">
-              <div className="pt-0.5">
-                <Check className="text-primary h-5 w-5" />
+    <section className="section-padding-y relative overflow-hidden">
+      <div className="container-padding-x container mx-auto">
+        <div className="max-w-6xl mx-auto">
+          <div className="grid grid-cols-1 lg:grid-cols-1 gap-12 items-center">
+            {/* Content */}
+            <div className="text-center">
+              {/* Tagline */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 mb-6">
+                <span className="text-sm font-medium text-gray-600">Карьерная навигация</span>
               </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">
-                Более 900 менторов готовы поделиться опытом
-              </span>
+              
+              {/* Main Heading */}
+              <h1 className="text-5xl lg:text-6xl font-bold mb-6 text-black">
+                Ты не обязан выбирать<br />
+                Будущее в одиночку
+              </h1>
+              
+              {/* Platform Description */}
+              <p className="text-xl lg:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+                Наставники и ИИ помогут выбрать профессию, поступить и развить нужные навыки.
+              </p>
+
+              {/* Feature List */}
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8 max-w-4xl mx-auto">
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
+                  <div className="w-6 h-6 bg-purple-400 rounded-full flex items-center justify-center">
+                    <Users className="h-3 w-3 text-black" />
+                  </div>
+                  <span className="text-sm font-medium text-black">Профориентаторы</span>
+                </div>
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
+                  <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                    <Target className="h-3 w-3 text-black" />
+                  </div>
+                  <span className="text-sm font-medium text-black">Консультанты по поступлению</span>
+                </div>
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
+                  <div className="w-6 h-6 bg-purple-400 rounded-full flex items-center justify-center">
+                    <Check className="h-3 w-3 text-black" />
+                  </div>
+                  <span className="text-sm font-medium text-black">Наставники из реальных профессий</span>
+                </div>
+                <div className="flex items-center gap-3 p-3 rounded-lg bg-gray-50">
+                  <div className="w-6 h-6 bg-yellow-400 rounded-full flex items-center justify-center">
+                    <Brain className="h-3 w-3 text-black" />
+                  </div>
+                  <span className="text-sm font-medium text-black">Умный ИИ-наставник 24/7</span>
+                </div>
+              </div>
             </div>
 
-            <div className="flex items-start gap-3">
-              <div className="pt-0.5">
-                <Check className="text-primary h-5 w-5" />
-              </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">
-                Средняя оценка менторов — 9,7 из 10
-              </span>
-            </div>
-
-            <div className="flex items-start gap-3">
-              <div className="pt-0.5">
-                <Check className="text-primary h-5 w-5" />
-              </div>
-              <span className="text-card-foreground text-base leading-6 font-medium">
-                Минимум 5 лет практического опыта у каждого ментора
-              </span>
+            {/* CTA Buttons */}
+            <div className="flex flex-col gap-3 sm:flex-row sm:gap-4 justify-center">
+              <Link href="/mentors">
+                <button className="w-full sm:w-auto px-8 py-4 bg-purple-400 text-black font-semibold rounded-lg hover:bg-purple-500 transition-colors flex items-center justify-center gap-2">
+                  <span>Найти наставника</span>
+                  <ArrowRight className="h-5 w-5" />
+                </button>
+              </Link>
+              <Link href="/ai-mentor">
+                <button className="w-full sm:w-auto px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-500 transition-colors">
+                  Попробовать ИИ-наставника
+                </button>
+              </Link>
             </div>
           </div>
-
-          {/* CTA Buttons */}
-          <div className="flex flex-col gap-3 sm:flex-row">
-            <Link href="/mentors">
-              <Button>Найти ментора</Button>
-            </Link>
-            <Link href="/how-it-works">
-              <Button variant="ghost">
-                Как это работает
-                <ArrowRight />
-              </Button>
-            </Link>
-          </div>
-        </div>
-
-        {/* Right Column */}
-        <div className="w-full flex-1">
-          <AspectRatio ratio={1 / 1}>
-            <Image
-              src="/Hero.png"
-              alt="Hero visual"
-              fill
-              priority
-              className="h-full w-full rounded-xl object-cover"
-            />
-          </AspectRatio>
         </div>
       </div>
     </section>
