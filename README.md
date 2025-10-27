@@ -1,5 +1,8 @@
 # GC Education - Mentorship & Learning Platform
 
+![Demo Screenshot 1](./public/demo.png)
+![Demo Screenshot 2](./public/demo2.png)
+
 A modern educational platform connecting students with experienced mentors and providing access to quality education through personalized approach.
 
 ## 🚀 Features
