@@ -55,9 +55,12 @@ export function PlatformDescription() {
           </div>
 
           {/* Bottom Text */}
-          <p className="text-xl font-semibold text-black">
-            Один путь — десятки решений. И человек рядом на каждом шаге.
-          </p>
+          <div className="flex items-center justify-center gap-3 mb-4">
+            <Compass className="h-6 w-6 text-purple-400" />
+            <p className="text-xl font-semibold text-black">
+              Один путь — десятки решений. И человек рядом на каждом шаге.
+            </p>
+          </div>
         </div>
       </div>
     </section>

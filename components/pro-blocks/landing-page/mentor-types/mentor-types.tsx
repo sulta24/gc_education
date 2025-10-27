@@ -5,26 +5,26 @@ export function MentorTypes() {
   const mentorTypes = [
     {
       icon: GraduationCap,
-      title: "Профориентация",
-      description: "Помогаем определиться с будущей профессией и выбрать подходящее направление обучения",
+      title: "Профориентаторы",
+      description: "Помогут понять, в чём ты силён и куда двигаться",
       bgColor: "bg-purple-400"
     },
     {
       icon: BookOpen,
-      title: "Поступление в вуз",
-      description: "Сопровождаем процесс поступления в университеты России и зарубежья",
+      title: "Консультанты по поступлению",
+      description: "Расскажут о вузах, грантах, стипендиях и подготовке",
       bgColor: "bg-yellow-400"
     },
     {
       icon: Briefcase,
-      title: "Карьерные наставники",
-      description: "Эксперты из разных сфер делятся опытом и помогают построить карьерный путь",
+      title: "Карьерные менторы",
+      description: "Молодые профессионалы из Google, TikTok, медицинских стартапов, инженерии и т.д.",
       bgColor: "bg-purple-400"
     },
     {
       icon: TrendingUp,
-      title: "Наставники развития",
-      description: "Работаем над личностным ростом, навыками и достижением целей",
+      title: "Развивающие наставники",
+      description: "Помогут прокачать навыки: публичные выступления, дизайн, код, проекты",
       bgColor: "bg-yellow-400"
     }
   ];
@@ -70,7 +70,7 @@ export function MentorTypes() {
           <div className="text-center">
             <Link href="/mentors">
               <button className="inline-flex items-center gap-3 px-8 py-4 bg-purple-400 rounded-lg text-black font-medium hover:bg-purple-500 transition-colors">
-                <span>Найти своего наставника</span>
+                <span>Открыть каталог наставников</span>
                 <ArrowRight className="h-5 w-5" />
               </button>
             </Link>

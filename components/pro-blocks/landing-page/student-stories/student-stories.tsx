@@ -3,16 +3,18 @@ import { Quote, Star } from "lucide-react";
 export function StudentStories() {
   const stories = [
     {
-      name: "Анна Петрова",
-      story: "Благодаря наставнику поступила в Технический университет Мюнхена. Получила четкий план подготовки и поддержку на каждом этапе.",
-      university: "TUM, Германия",
-      program: "Информатика"
+      name: "Аяжан",
+      age: "15 лет",
+      story: "После сессии с ИИ и наставником я поняла, что хочу идти в биомедицину. Сейчас прохожу мини-курс и готовлюсь к подаче на KAIST.",
+      university: "KAIST",
+      program: "Биомедицина"
     },
     {
-      name: "Максим Иванов", 
-      story: "Наставник помог определиться с направлением и найти стипендию. Сейчас учусь в Амстердаме и очень доволен выбором.",
-      university: "UvA, Нидерланды",
-      program: "Бизнес-аналитика"
+      name: "Ислам", 
+      age: "16 лет",
+      story: "Я мечтал поступить в Европу, но не знал с чего начать. Наставник по поступлению расписал чёткий план. Сейчас подаюсь в Венгрию.",
+      university: "Венгрия",
+      program: "Поступление"
     }
   ];
 
@@ -48,7 +50,7 @@ export function StudentStories() {
                 <div className="border-t border-gray-100 pt-6">
                   <div className="flex items-center justify-between">
                     <div>
-                      <h4 className="font-semibold text-black">{story.name}</h4>
+                      <h4 className="font-semibold text-black">{story.name}, {story.age}</h4>
                       <p className="text-sm text-gray-600">{story.university}</p>
                       <p className="text-sm text-gray-500">{story.program}</p>
                     </div>

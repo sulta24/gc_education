@@ -5,17 +5,17 @@ export function AiMentor() {
   const features = [
     {
       icon: Star,
-      title: "Подбор университета и страны",
+      title: "Подбор вузов и стран для поступления",
       description: "Анализ твоих интересов и возможностей"
     },
     {
       icon: MessageCircle,
-      title: "Рекомендации по карьере",
+      title: "Рекомендации по профессиям, навыкам и карьерным трекам",
       description: "Персональные советы от экспертов"
     },
     {
       icon: Clock,
-      title: "Поддержка 24/7",
+      title: "Поддержка в любое время 24/7",
       description: "Ответы на вопросы в любое время"
     }
   ];
@@ -42,10 +42,15 @@ export function AiMentor() {
                   <Video className="h-6 w-6 text-black" />
                 </div>
                 <div>
-                  <h3 className="font-semibold text-black">Формат: видеоконсультация</h3>
-                  <p className="text-sm text-gray-600">Живое общение с экспертом</p>
+                  <h3 className="font-semibold text-black">Формат: видео-консультация</h3>
+                  <p className="text-sm text-gray-600">Как будто вы на Zoom</p>
                 </div>
               </div>
+
+              {/* Description */}
+              <p className="text-gray-600 mb-6">
+                Мы обучили ИИ на сессиях лучших менторов, карьерных консультантов и выпускников топ-вузов.
+              </p>
 
               {/* Features */}
               <div className="space-y-4 mb-8">
@@ -65,62 +70,39 @@ export function AiMentor() {
                 })}
               </div>
 
-              {/* CTA Buttons */}
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/ai-mentor">
-                  <button className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-purple-400 rounded-lg text-black font-medium hover:bg-purple-500 transition-colors">
-                    <span>Попробовать ИИ</span>
-                    <ArrowRight className="h-4 w-4" />
-                  </button>
-                </Link>
-                <Link href="/mentors">
-                  <button className="inline-flex items-center justify-center gap-2 px-6 py-3 bg-yellow-400 rounded-lg text-black font-medium hover:bg-yellow-500 transition-colors">
-                    <Calendar className="h-4 w-4" />
-                    <span>Записаться на консультацию</span>
-                  </button>
-                </Link>
-              </div>
+              {/* Bottom Text */}
+              <p className="text-sm text-gray-600 mt-6 italic">
+                💡 Начни с ИИ, продолжи с живым наставником — или наоборот. Ты выбираешь.
+              </p>
             </div>
 
-            {/* Right Side - Chat Mockup */}
-            <div className="lg:pl-8">
+            {/* Right Side - AI Mentor Image */}
+            <div className="lg:pl-8 flex flex-col justify-center">
               <div className="bg-gray-50 rounded-2xl p-6 border border-gray-200">
-                <div className="flex items-center gap-3 mb-6 pb-4 border-b border-gray-200">
-                  <div className="w-10 h-10 bg-purple-400 rounded-full flex items-center justify-center">
-                    <Bot className="h-5 w-5 text-black" />
-                  </div>
-                  <div>
-                    <h4 className="font-medium text-black">ИИ-Наставник</h4>
-                    <p className="text-sm text-gray-600">Онлайн</p>
-                  </div>
+                {/* Text above image - more compact */}
+                <div className="text-center mb-3">
+                  <h4 className="font-semibold text-base text-black mb-1">
+                    Твой персональный ИИ-наставник
+                  </h4>
+                  <p className="text-xs text-gray-600">
+                    Доступен 24/7 для консультаций
+                  </p>
                 </div>
-
-                <div className="space-y-4">
-                  <div className="bg-white p-4 rounded-lg border border-gray-100">
-                    <p className="text-sm text-gray-700">
-                      Привет! Я помогу тебе выбрать университет и построить карьерный план. 
-                      Расскажи о своих интересах?
-                    </p>
-                  </div>
-                  
-                  <div className="bg-purple-100 p-4 rounded-lg ml-8">
-                    <p className="text-sm text-gray-700">
-                      Интересуюсь программированием и хочу учиться в Европе
-                    </p>
-                  </div>
-
-                  <div className="bg-white p-4 rounded-lg border border-gray-100">
-                    <p className="text-sm text-gray-700">
-                      Отлично! Рекомендую рассмотреть технические университеты Германии и Нидерландов. 
-                      Запишемся на консультацию для детального разбора?
-                    </p>
-                  </div>
+                
+                {/* Image - optimized for wide format */}
+                <div className="mb-3">
+                  <img 
+                    src="/AI mentor.png" 
+                    alt="ИИ-Наставник" 
+                    className="w-full h-auto rounded-lg object-cover"
+                  />
                 </div>
-
-                <div className="mt-6 pt-4 border-t border-gray-200">
+                
+                {/* Button below image - more compact */}
+                <div className="text-center">
                   <Link href="/ai-mentor">
-                    <button className="w-full py-3 bg-yellow-400 rounded-lg text-black font-medium hover:bg-yellow-500 transition-colors">
-                      Начать диалог
+                    <button className="w-full py-2.5 bg-purple-400 rounded-lg text-black text-sm font-medium hover:bg-purple-500 transition-colors">
+                      Попробовать ИИ-наставника
                     </button>
                   </Link>
                 </div>

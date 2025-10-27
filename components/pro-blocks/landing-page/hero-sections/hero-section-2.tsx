@@ -13,7 +13,7 @@ export function HeroSection2() {
             <div className="text-center">
               {/* Tagline */}
               <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-gray-100 mb-6">
-                <span className="text-sm font-medium text-gray-600">Карьерная навигация</span>
+                <span className="text-sm font-medium text-gray-600">Платформа для школьников и подростков</span>
               </div>
               
               {/* Main Heading */}
@@ -66,7 +66,12 @@ export function HeroSection2() {
               </Link>
               <Link href="/ai-mentor">
                 <button className="w-full sm:w-auto px-8 py-4 bg-yellow-400 text-black font-semibold rounded-lg hover:bg-yellow-500 transition-colors">
-                  Попробовать ИИ-наставника
+                  Познакомиться с ИИ
+                </button>
+              </Link>
+              <Link href="/diagnostics">
+                <button className="w-full sm:w-auto px-8 py-4 bg-white border-2 border-gray-300 text-black font-semibold rounded-lg hover:bg-gray-50 transition-colors">
+                  Пройти стартовую диагностику
                 </button>
               </Link>
             </div>

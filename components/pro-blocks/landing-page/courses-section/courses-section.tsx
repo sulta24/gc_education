@@ -3,12 +3,10 @@ import Link from "next/link";
 
 export function CoursesSection() {
   const courses = [
-    "Как выбрать университет",
-    "Подготовка к поступлению",
-    "Написание мотивационного письма",
-    "Поиск стипендий и грантов",
-    "Адаптация в новой стране",
-    "Построение карьеры"
+    "Как выбрать профессию",
+    "Поступление в вузы Европы и Азии",
+    "Как создать портфолио",
+    "Навыки 21 века: от идеи до проекта"
   ];
 
   return (
@@ -23,9 +21,19 @@ export function CoursesSection() {
               </h2>
               
               <p className="text-xl lg:text-2xl text-gray-600 mb-8">
-                После консультации получаешь доступ к мини-курсам по твоей теме. 
-                Практические материалы для самостоятельного изучения.
+                После консультации ты получаешь доступ к:
               </p>
+
+              {/* Course Duration */}
+              <div className="flex items-center gap-3 mb-6 p-4 bg-yellow-50 rounded-lg border border-yellow-200">
+                <div className="w-10 h-10 bg-yellow-400 rounded-lg flex items-center justify-center">
+                  <Clock className="h-5 w-5 text-black" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-black">Мини-курсам (30–60 минут)</h3>
+                  <p className="text-sm text-gray-600">Все курсы в личном кабинете</p>
+                </div>
+              </div>
 
               {/* Course Topics */}
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mb-8">

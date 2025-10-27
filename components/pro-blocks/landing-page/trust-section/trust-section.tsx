@@ -1,29 +1,29 @@
-import { Award, Clock, Shield, Users } from "lucide-react";
+import { Award, CheckCircle, Shield, Users } from "lucide-react";
 
 export function TrustSection() {
   const trustFactors = [
     {
       icon: Users,
-      title: "500+ довольных студентов",
-      description: "Помогли поступить в топовые университеты мира",
+      title: "Мы работаем только с проверенными менторами",
+      description: "Строгий отбор и проверка квалификации каждого наставника",
       bgColor: "bg-purple-400"
     },
     {
-      icon: Award,
-      title: "Проверенные наставники",
-      description: "Все эксперты прошли строгий отбор и имеют опыт",
+      icon: CheckCircle,
+      title: "Все наставники проходят отбор и обучение",
+      description: "Специальная программа подготовки для работы с учениками",
       bgColor: "bg-yellow-400"
     },
     {
-      icon: Shield,
-      title: "Гарантия результата",
-      description: "Возврат средств, если не поможем достичь цели",
+      icon: Award,
+      title: "Есть бесплатная демо-встреча или чат",
+      description: "Попробуй перед тем, как принять решение о сотрудничестве",
       bgColor: "bg-purple-400"
     },
     {
-      icon: Clock,
-      title: "Поддержка 24/7",
-      description: "Всегда на связи для решения любых вопросов",
+      icon: Shield,
+      title: "Разработано экспертами из сферы образования, карьеры и EdTech",
+      description: "Профессиональная команда с многолетним опытом в образовании",
       bgColor: "bg-yellow-400"
     }
   ];
@@ -48,41 +48,25 @@ export function TrustSection() {
               const Icon = factor.icon;
               return (
                 <div key={index} className="text-center">
-                  <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                     {/* Icon */}
                     <div className={`w-16 h-16 ${factor.bgColor} rounded-xl flex items-center justify-center mb-6 mx-auto`}>
                       <Icon className="h-8 w-8 text-black" />
                     </div>
                     
                     {/* Content */}
-                    <h3 className="font-semibold text-lg text-black mb-3">
-                      {factor.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {factor.description}
-                    </p>
+                    <div className="flex-1 flex flex-col justify-center">
+                      <h3 className="font-semibold text-lg text-black mb-3">
+                        {factor.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {factor.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );
             })}
-          </div>
-
-          {/* Bottom Stats */}
-          <div className="mt-16 text-center">
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div className="p-6">
-                <div className="text-3xl font-bold text-black mb-2">95%</div>
-                <p className="text-gray-600">Успешных поступлений</p>
-              </div>
-              <div className="p-6">
-                <div className="text-3xl font-bold text-black mb-2">50+</div>
-                <p className="text-gray-600">Стран для обучения</p>
-              </div>
-              <div className="p-6">
-                <div className="text-3xl font-bold text-black mb-2">24/7</div>
-                <p className="text-gray-600">Поддержка студентов</p>
-              </div>
-            </div>
           </div>
         </div>
       </div>

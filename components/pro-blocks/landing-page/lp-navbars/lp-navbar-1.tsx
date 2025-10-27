@@ -12,6 +12,7 @@ const MENU_ITEMS = [
   { label: "Менторы", href: "/mentors" },
   { label: "О нас", href: "/about" },
   { label: "Как это работает", href: "/how-it-works" },
+  { label: "Сообщество", href: "https://t.me/+h69rkw-RXAM1ZDE6" },
 ] as const;
 
 interface NavMenuItemsProps {

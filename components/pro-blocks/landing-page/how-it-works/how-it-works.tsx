@@ -5,29 +5,29 @@ export function HowItWorks() {
   const steps = [
     {
       number: "01",
-      title: "Заполняешь анкету",
-      description: "Рассказываешь о себе, своих интересах и целях",
+      title: "Стартовая диагностика",
+      description: "Короткий тест поможет понять, где ты и чего хочешь",
       icon: Target,
       bgColor: "bg-purple-400"
     },
     {
       number: "02", 
-      title: "Получаешь подбор наставника",
-      description: "Мы находим идеального ментора под твои задачи",
+      title: "Выбор наставника",
+      description: "По цели, сфере, опыту или направлению",
       icon: MessageCircle,
       bgColor: "bg-yellow-400"
     },
     {
       number: "03",
-      title: "Записываешься на консультацию",
-      description: "Выбираешь удобное время для видеозвонка",
+      title: "Первая сессия (онлайн 1:1)",
+      description: "С живым экспертом или ИИ-наставником",
       icon: Calendar,
       bgColor: "bg-purple-400"
     },
     {
       number: "04",
-      title: "Получаешь план развития",
-      description: "Конкретные шаги к твоей цели и доступ к курсам",
+      title: "Путь продолжается",
+      description: "Мини-курсы, следующий ментор, план развития",
       icon: Trophy,
       bgColor: "bg-yellow-400"
     }
@@ -53,7 +53,7 @@ export function HowItWorks() {
               const Icon = step.icon;
               return (
                 <div key={index} className="relative">
-                  <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300">
+                  <div className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 hover:shadow-lg transition-all duration-300 h-full flex flex-col">
                     {/* Step Number */}
                     <div className={`absolute -top-4 -left-4 w-12 h-12 ${step.bgColor} rounded-full flex items-center justify-center text-black font-bold text-lg shadow-lg`}>
                       {step.number}
@@ -65,12 +65,14 @@ export function HowItWorks() {
                     </div>
                     
                     {/* Content */}
-                    <h3 className="font-semibold text-lg text-black mb-3 text-center">
-                      {step.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 text-center leading-relaxed">
-                      {step.description}
-                    </p>
+                    <div className="flex-1 flex flex-col justify-center">
+                      <h3 className="font-semibold text-lg text-black mb-3 text-center">
+                        {step.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 text-center leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );

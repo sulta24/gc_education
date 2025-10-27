@@ -5,38 +5,38 @@ export function StudentJourney() {
   const journeySteps = [
     {
       icon: Target,
-      title: "Определение целей",
-      description: "Понимаем, чего ты хочешь достичь",
+      title: "Начни с диагностики",
+      description: "Пройди короткий тест для понимания своих целей",
       bgColor: "bg-purple-400"
     },
     {
       icon: MessageCircle,
-      title: "Консультация с наставником",
-      description: "Получаешь персональные рекомендации",
+      title: "Получи консультацию с ИИ или наставником",
+      description: "Выбери формат общения, который тебе подходит",
       bgColor: "bg-yellow-400"
     },
     {
       icon: BookOpen,
-      title: "Изучение материалов",
-      description: "Проходишь курсы и изучаешь гайды",
+      title: "Пройди курс",
+      description: "Изучи материалы по своему направлению",
       bgColor: "bg-purple-400"
     },
     {
       icon: Calendar,
-      title: "Планирование действий",
-      description: "Составляем конкретный план шагов",
+      title: "Обратись к следующему ментору",
+      description: "По навыкам или вузу для углубления знаний",
       bgColor: "bg-yellow-400"
     },
     {
       icon: CheckCircle,
-      title: "Выполнение плана",
-      description: "Реализуешь план с поддержкой наставника",
+      title: "Подготовься к поступлению",
+      description: "Реализуй план поступления с поддержкой",
       bgColor: "bg-purple-400"
     },
     {
       icon: Trophy,
-      title: "Достижение цели",
-      description: "Поступаешь в вуз или находишь работу мечты",
+      title: "Возвращайся — как ментор следующему поколению",
+      description: "Поделись своим опытом с другими учениками",
       bgColor: "bg-yellow-400"
     }
   ];
@@ -68,7 +68,7 @@ export function StudentJourney() {
                     </div>
                   )}
                   
-                  <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 text-center">
+                  <div className="bg-gray-50 rounded-2xl p-6 border border-gray-100 hover:shadow-lg transition-all duration-300 text-center h-full flex flex-col">
                     {/* Step Number */}
                     <div className={`w-8 h-8 ${step.bgColor} rounded-full flex items-center justify-center text-black font-bold text-sm mx-auto mb-4`}>
                       {index + 1}
@@ -80,12 +80,14 @@ export function StudentJourney() {
                     </div>
                     
                     {/* Content */}
-                    <h3 className="font-semibold text-lg text-black mb-3">
-                      {step.title}
-                    </h3>
-                    <p className="text-sm text-gray-600 leading-relaxed">
-                      {step.description}
-                    </p>
+                    <div className="flex-1 flex flex-col justify-center">
+                      <h3 className="font-semibold text-lg text-black mb-3">
+                        {step.title}
+                      </h3>
+                      <p className="text-sm text-gray-600 leading-relaxed">
+                        {step.description}
+                      </p>
+                    </div>
                   </div>
                 </div>
               );

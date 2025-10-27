@@ -8,13 +8,12 @@ export function FinalCta() {
         <div className="max-w-4xl mx-auto text-center">
           {/* Main Message */}
           <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-white">
-            Твоё будущее начинается с правильного выбора
+            Хочешь понять, кем стать, куда поступать и какие навыки тебе нужны?
           </h2>
           
           {/* Supporting Message */}
           <p className="text-xl lg:text-2xl text-gray-300 mb-12 max-w-3xl mx-auto leading-relaxed">
-            Не теряй время на сомнения. Получи персональную консультацию и узнай, 
-            как достичь своих целей в образовании и карьере уже сегодня.
+            Не ищи в одиночку. Поговори с теми, кто уже прошёл этот путь.
           </p>
 
           {/* CTA Buttons */}
@@ -39,22 +38,6 @@ export function FinalCta() {
                 <span>Попробовать ИИ</span>
               </button>
             </Link>
-          </div>
-
-          {/* Trust Indicators */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pt-12 border-t border-gray-700">
-            <div className="text-center">
-              <div className="text-2xl font-bold text-yellow-400 mb-2">4.9/5</div>
-              <p className="text-gray-400">Средняя оценка</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-purple-400 mb-2">500+</div>
-              <p className="text-gray-400">Довольных студентов</p>
-            </div>
-            <div className="text-center">
-              <div className="text-2xl font-bold text-white mb-2">95%</div>
-              <p className="text-gray-400">Успешных поступлений</p>
-            </div>
           </div>
         </div>
       </div>
